@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET home page. */
+/* GET main page. */
 router.get('/', function (req, res) {
-  res.render('index', { title: 'Inventory Tracker App' });
+  res.render('index');
 });
 
 module.exports = router;

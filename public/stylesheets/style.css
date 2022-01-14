@@ -1,8 +1,117 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap");
+
+:root {
+  --dark: #291818;
+  --light: #b69595;
+  --border: #e6dfde;
+  --border-btn: #f4eded;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.nav-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+
+.border-shadow {
+  border: 1px solid var(--border-btn);
+  box-shadow: 1px 3px 10px #efebe9;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-gradient {
+  padding: 0.2em 0.2em;
+  background: linear-gradient(to right, #c97c29, #911c1c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fas {
+  color: #911c1c;
+}
+
+#header nav {
+  padding: 5em 0;
+  width: 100%;
+}
+
+#main-con {
+  font-family: "Open Sans", sans-serif;
+}
+
+#main-con .container .box-nav {
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
+#main-con {
+  margin: 2em 0;
+}
+
+table {
+  border-spacing: 0px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Main-table td {
+  padding: 0.75em;
+  vertical-align: top;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+.Main-table th {
+  padding: 0.75em;
+  vertical-align: top;
+  text-align: center;
+  border-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.Main-table tr:hover {
+  background-color: rgb(250, 209, 195);
+}
+.Main-table tr:hover td > a {
+  box-shadow: none;
+}
+
+.Main-table .thead-dark th {
+  color: white;
+  background-color: rgb(125, 98, 90);
+  border-color: rgb(125, 92, 90);
 }

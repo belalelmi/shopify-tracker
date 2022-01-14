@@ -89,5 +89,5 @@ function onListening() {
   debug('Listening on ' + bind);
 
   //terminal listening prompt
-  console.log("Server listening on Port:", port)
+  console.log(`Server is running on http://localhost:${port}`)
 }
