@@ -70,6 +70,14 @@ npm start
   - It runs through each of the files, in order, and executes them against the database.
   - Note: you will lose all newly created inventory items each time this is run, since the schema files will tend to `DROP` the tables and recreate them.
 
+## Tech Stack
+
+```
+Node.js,
+Express,
+PostgreSQL
+```
+
 ## Dependencies
 
 - Node 10.x or above
