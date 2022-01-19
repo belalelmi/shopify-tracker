@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS inventory CASCADE;
+CREATE TABLE inventory (
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  quantity INTEGER NOT NULL,
+  description VARCHAR(255),
+  price INTEGER NOT NULL,
+  bin VARCHAR(255) NOT NULL,
+  certification VARCHAR(100) 
+);
