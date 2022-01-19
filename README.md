@@ -75,7 +75,8 @@ npm start
 ```
 Node.js,
 Express,
-PostgreSQL
+PostgreSQL,
+EJS/CSS
 ```
 
 ## Dependencies
