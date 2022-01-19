@@ -1,0 +1,57 @@
+<%- include('partials/_header') %>
+
+
+
+  <main style="margin-top: 6em" id="main-con">
+    <div class="container">
+      <div class="box-nav d-flex justify-between">
+        <div class="filter">
+          <a href="/"><i class="fas fa-angle-double-left"></i> Current Inventory</a>
+        </div>
+      </div>
+      <div class="form-title text-center">
+        <h2 class="text-dark">Update Inventory</h2>
+        <span class="text-dark">Edit this form to update the inventory!</span>
+      </div>
+
+      <form action="update_inventory/<%=item.id%>" id="update-item" method="POST">
+        <div class="new_item">
+          <div class="form-group">
+            <label id="tester" for="Item name" class="text-dark">Item Name</label>
+            <input type="hidden" name="id" value="<%= item.id  %>" />
+            <input type="text" name="name" value=" <%= item.name %>" placeholder="Item Name" />
+          </div>
+          <div class="form-group">
+            <label for="Quantity" class="text-dark">Quantity</label>
+            <input type="number" name="quantity" value="<%= item.quantity %>" placeholder="Quantity" />
+          </div>
+          <div class="form-group">
+            <label for="Description" class="text-dark">Description</label>
+            <input type="text" name="description" value="<%= item.description  %>"
+              placeholder="max length 255 chars." />
+          </div>
+          <div class="form-group">
+            <label for="Item name" class="text-dark">Unit Price</label>
+            <input type="text" name="price" id="currency-field" value="<%= item.price %>" data-type="currency"
+              placeholder="$1,000" />
+          </div>
+          <div class="form-group">
+            <label for="Storage" class="text-dark">Storage (Bin #)</label>
+            <input type="text" name="bin" value="<%= item.bin  %>" placeholder="ex. VTY 87" />
+          </div>
+          <div class="form-group">
+            <label for="Certification" class="text-dark">Certification</label>
+            <input type="text" name="certification" value="<%= item.certification  %>" placeholder="ex. ISO 900" />
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit-btn" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </form>
+
+      <br><br>
+    </div>
+  </main>
+
+
+  <%- include('partials/_footer') %>
