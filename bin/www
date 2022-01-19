@@ -7,6 +7,7 @@
 const app = require('../app');
 const debug = require('debug')('shopify-tracker:server');
 const http = require('http');
+const chalk = require('chalk');
 
 /**
  * Get port from environment and store in Express.
@@ -89,5 +90,5 @@ function onListening() {
   debug('Listening on ' + bind);
 
   //terminal listening prompt
-  console.log(`Server is running on http://localhost:${port}`)
+  console.log(chalk.cyan(`Server is running on http://localhost:${port}`))
 }
