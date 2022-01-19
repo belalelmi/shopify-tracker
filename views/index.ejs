@@ -1,5 +1,41 @@
 <!-- header -->
 <%- include('partials/_header') %>
 
-<!-- footer -->
-<%- include('partials/_footer') %>
+  <main style="margin-top: 6em" id="main-con">
+    <div class="container" id="topRow">
+      <div class="box-nav d-flex add-end">
+        <!-- Add item to inventory -->
+        <a href="/add_item" class="border-shadow">
+          <span class="text-gradient">Add Item <i class="fas fa-plus-circle"></i></span>
+        </a>
+        <div id="addedItem"></div>
+
+        <!-- Export product data to a CSV -->
+        <a href="/export_data" class="border-shadow">
+          <span class="text-gradient">Export product data (CSV)<i class="fas fa-cloud-download-alt"></i></span>
+        </a>
+      </div>
+
+      <form action="/" method="POST">
+        <table class="Main-table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+              <th>Storage (Bin #)</th>
+              <th>Certification</th>
+              <th>Edit/Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%- include('partials/_show') %>
+          </tbody>
+        </table>
+      </form>
+      <br>
+  </main>
+
+  <!-- footer -->
+  <%- include('partials/_footer') %>
