@@ -4,7 +4,7 @@
 
 ## Initial Setup
 
-1. You will need node's package manager(NPM). To install node.js and npm please refer to the npm docs [here]('https://docs.npmjs.com/downloading-and-installing-node-js-and-npm')
+1. You will need node's package manager(NPM). To install node.js and npm please refer to the npm docs [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 2. Clone this repository.
 3. Install dependencies with `npm install`.
@@ -14,7 +14,7 @@
 
 ## Creating The DB
 
-You will need to create a postgres user. You can refer to the postgres docs [here]('https://www.postgresql.org/docs/8.0/sql-createuser.html') on creating a user. When a user has been created, or if you already have a postgres user, add the username to your config.env file `PG_HOST=username`.
+You will need to create a postgres user. You can refer to the postgres docs [here](https://www.postgresql.org/docs/8.0/sql-createuser.html) on creating a user. When a user has been created, or if you already have a postgres user, add the username to your config.env file `PG_HOST=username`.
 
 1. Use the `psql -U username`, where username is your username, command to login to the PostgreSQL server.
 
