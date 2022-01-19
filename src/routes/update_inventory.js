@@ -7,7 +7,6 @@ module.exports = (db) => {
     db.query('SELECT * FROM inventory WHERE id = $1', [id])
       .then(data => {
         const item = data.rows[0];
-        console.log(item)
         res.render('update_inventory', { item })
       })
       .catch(err => {
