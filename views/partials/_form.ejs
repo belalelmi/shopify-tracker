@@ -1,0 +1,33 @@
+<form action="/add_item" id="add-item" method="POST">
+  <div class="new_item">
+    <div class="form-group">
+      <label id="tester" for="Item name" class="text-dark">Item Name</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="name" value="" placeholder="Item Name" />
+    </div>
+    <div class="form-group">
+      <label for="Quantity" class="text-dark">Quantity</label>
+      <input type="number" name="quantity" value="" placeholder="Quantity" />
+    </div>
+    <div class="form-group">
+      <label for="Description" class="text-dark">Description</label>
+      <textarea type="text" name="description" value="" placeholder="max length 255 chars." /></textarea>
+    </div>
+    <div class="form-group">
+      <label for="Item name" class="text-dark">Unit Price</label>
+      <input type="text" name="price" id="currency-field" value="" data-type="currency" placeholder="USD" />
+    </div>
+    <div class="form-group">
+      <label for="Storage" class="text-dark">Storage (Bin #)</label>
+      <input type="text" name="bin" value="" placeholder="ex. VTY 87" />
+    </div>
+    <div class="form-group">
+      <label for="Certification" class="text-dark">Certification</label>
+      <input type="text" name="certification" value="" placeholder="ex. ISO 900" />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit-btn" class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</form>

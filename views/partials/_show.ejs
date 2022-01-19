@@ -1,0 +1,34 @@
+<% for(let item in items) { %>
+  <tr>
+    <td>
+      <%= items[item].name %>
+    </td>
+    <td>
+      <%= items[item].quantity %>
+    </td>
+    <td>
+      <%= items[item].description %>
+    </td>
+    <td>
+      <%= items[item].price %>
+    </td>
+    <td>
+      <%= items[item].bin %>
+    </td>
+    <td>
+      <%= items[item].certification %>
+    </td>
+    <td id="edit-delete">
+      <a href="/update_inventory?id=<%= items[item].id %>" class="btn border-shadow update">
+        <span>
+          <i class="fas fa-edit"></i>
+        </span>
+      </a>
+      <form method="POST" action="/update_inventory/<%= items[item].id %>/delete">
+        <button class="btn border-shadow remove">
+          <span><i class="fas fa-trash-alt"></i> </span>
+        </button>
+      </form>
+    </td>
+  </tr>
+  <% } %>
