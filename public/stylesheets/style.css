@@ -12,10 +12,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+#topRow {
+  justify-content: space-between;
+}
 a {
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
+  padding: 5px;
 }
 
 .container {
@@ -33,8 +36,8 @@ a {
   flex-wrap: wrap;
 }
 
-.justify-between {
-  justify-content: space-between;
+.add-end {
+  justify-content: end;
 }
 .text-center {
   text-align: center;
@@ -54,11 +57,14 @@ a {
 }
 
 .text-gradient {
-  padding: 0.2em 0.2em;
-  background: linear-gradient(to right, #c97c29, #911c1c);
+  padding: 2em;
+  background: #911c1c;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#edit-delete {
+  display: flex;
 }
 
 .fas {
@@ -75,6 +81,7 @@ a {
 }
 
 #main-con .container .box-nav {
+  justify-content: space-around;
   font-size: 1em;
   padding: 0.5em 1em;
 }
@@ -114,4 +121,45 @@ table {
   color: white;
   background-color: rgb(125, 98, 90);
   border-color: rgb(125, 92, 90);
+}
+
+.form-title {
+  margin-top: 2em;
+}
+
+.form-title > h2 {
+  padding: 0.5em 0;
+}
+
+.new_item {
+  max-width: 768px;
+  margin: auto;
+}
+textarea {
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+#submit-btn {
+  width: 100%;
+}
+
+#update-item .form-group,
+.new_item .form-group {
+  margin-top: 0.4em 0;
+}
+
+#tester {
+  color: rebeccapurple;
+}
+
+#update_item .form-group input {
+  width: 100%;
+  padding: 0.6em 1em;
+  margin: 0.5em 0;
+  border: 1px solid var(--border);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  border-radius: 0.2em;
 }
