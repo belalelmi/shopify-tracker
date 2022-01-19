@@ -14,13 +14,13 @@
 
 ## Creating The DB
 
-You will need to create a postgres user. You can refer to the postgres docs [here](https://www.postgresql.org/docs/8.0/sql-createuser.html) on creating a user. When a user has been created, or if you already have a postgres user, add the username to your config.env file `PG_HOST=username`.
+You will need to create a postgres user. You can refer to the postgres docs [here](https://www.postgresql.org/docs/8.0/sql-createuser.html) on creating a user. When a user has been created, or if you already have a postgres user, add the username to your config.env file `DB_HOST=username`.
 
 1. Use the `psql -U username`, where username is your username, command to login to the PostgreSQL server.
 
 2. Create a database with `CREATE DATABASE inventory;`.
 
-3. Create a file called `config.env` in the root directoy. Copy the `config.env.example` file contents to `config.env`. Fill in the necessary PostgreSQL configuration. The `node-postgres` library uses these environment variables by default.
+3. Create a file called `config.env` in the root directoy of this project. Copy the `config.env.example` file contents to `config.env`. Fill in the necessary PostgreSQL configuration. The `node-postgres` library uses these environment variables by default.
 
 > Below is an example of what the .env file should look like:
 
