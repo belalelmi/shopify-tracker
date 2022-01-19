@@ -20,16 +20,16 @@ You will need to create a postgres user. You can refer to the postgres docs [her
 
 2. Create a database with `CREATE DATABASE inventory;`.
 
-3. Copy the `config.env.example` file to `config.env` and fill in the necessary PostgreSQL configuration. The `node-postgres` library uses these environment variables by default.
+3. Create a file called `config.env` in the root directoy. Copy the `config.env.example` file contents to `config.env`. Fill in the necessary PostgreSQL configuration. The `node-postgres` library uses these environment variables by default.
 
 > Below is an example of what the .env file should look like:
 
 ```
-PG_HOST=localhost
-PG_USER=postgres
-PG_PASS=postgres (PB_PASS can be removed if you did not setup a password for your postgres user)
-PG_DATABASE=inventory
-PG_PORT=5432
+DB_HOST=localhost
+DB_USER=YOURUSERNAME
+DB_PASS=YOURPASSWORD (PB_PASS can be removed if you did not setup a password for your postgres user)
+DB_NAME=inventory
+DB_PORT=5432
 ```
 
 ## Seeding
