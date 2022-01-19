@@ -4,7 +4,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 
 build/Release
 
@@ -12,22 +11,10 @@ build/Release
 node_modules/
 package-lock.json
 jspm_packages/
-
 .npm
 
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
 # Yarn Integrity file
 .yarn-integrity
 
 # dotenv environment variables file
 .env
-.env.test
-
-# Serverless directories
-.serverless/
-
-# DynamoDB Local files
-.dynamodb/
